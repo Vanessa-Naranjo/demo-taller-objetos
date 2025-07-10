@@ -16,10 +16,11 @@ public class TallerObjetos {
         ProductoService productoService=new ProductoService();
 
         productoDto.setNombreProducto("Iphone 16");
-        productoDto.setCantidad(1);
+        productoDto.setCantidad(2);
         productoDto.setValor(2345876.00);
 
         productoService.imprimirProducto(productoDto);
+
     }
 
 

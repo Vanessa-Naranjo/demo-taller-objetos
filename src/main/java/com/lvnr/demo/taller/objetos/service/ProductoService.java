@@ -9,5 +9,14 @@ public class ProductoService {
         System.out.println("Cantidad del producto: " +productoDto.getCantidad());
         System.out.println("Valor del producto: " +productoDto.getValor());
 
+        double total = productoDto.getCantidad() * productoDto.getValor();
+        System.out.println("Total es: "+total);
+
+        if (total> productoDto.getValor()){
+            System.out.println("Tiene descuento");
+        } else  {
+            System.out.println("No tiene descuento");
+        }
+
     }
 }
